@@ -1,0 +1,8 @@
+.env*
+!.env.example
+node_modules
+.next
+*.test.ts
+*.tsbuildinfo
+test-docs
+pitch
