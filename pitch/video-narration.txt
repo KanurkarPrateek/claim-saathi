@@ -1,0 +1,41 @@
+This is Claim Saathi. It helps Indian families fix their health insurance claim, before it fails. Built for the Paytm Build for India hackathon, track two: A.I. powered financial journeys.
+
+Families pay premiums for years. Then, at the discharge desk, they lose money to rules they never saw. Ramesh's bill was seventy four thousand nine hundred rupees. Because his room was above the rent limit, the insurer also cut his doctor and nursing charges. Nobody told him at admission.
+
+This happens at scale. In financial year twenty twenty five, nearly thirty thousand crore rupees of health claims were rejected or cut. Four in ten claimants say they were rejected or partly paid for invalid reasons. And complaints jumped forty one percent.
+
+Claim Saathi is a claim co-pilot for the three moments that decide the payout. Before admission. At discharge. And the claim pack. A photo of the policy, a photo of the bill, three taps, and a clear answer. Let me show you.
+
+Meet Ramesh. He's leaving hospital after dengue. Will his insurance pay, and how much?
+
+Step one. He takes a photo of his policy.
+
+A.I. reads it. The room limit of three thousand rupees a day, the waiting periods, and the clause behind each rule.
+
+Step two. A photo of the hospital bill.
+
+Every line is read and sorted. Seventy four thousand nine hundred rupees, in ten items.
+
+Step three. Three taps that only he can answer. No forms.
+
+The answer. He'll get fifty two thousand five hundred rupees. And seventeen thousand two hundred of the cut was avoidable.
+
+Here's the hidden cut. His room was above the limit, so doctor, nursing and procedure charges were also paid at only sixty percent.
+
+What to do next, ranked by rupees saved, with the policy clause for every cut.
+
+One tap gives a ready claim pack. A cover letter, the checklist, and a grievance letter, if the insurer cuts more than it should.
+
+Now Sunita. Her knee surgery is booked fourteen months into her policy. It would be rejected.
+
+Claim Saathi tells her the date she is covered, and which room costs her nothing extra. Before she is admitted.
+
+And all of it works in Hindi too.
+
+Under the hood: A.I. reads the documents. Kimi on Azure A.I. Foundry turns policy and bill photos into validated, structured data. But the model never does the maths. A rule engine built on I.R.D.A.I. regulations decides every rupee, and it is covered by unit tests.
+
+Other tools explain the rejection after it happens. Claim Saathi prevents it. It works before admission, cites the clause for every rupee, asks only for what's missing, and hands you ready letters.
+
+The impact: money stays in families' pockets. Seventeen thousand rupees saved on one dengue claim, and a two lakh rupee surgery rejection avoided. Insurers get complete claims, and hospitals get faster discharges.
+
+It's free for families, and paid for by the businesses that save. A per claim A.P.I. for insurers and T.P.A.s, a subscription for hospital insurance desks, and better fit policies inside Paytm. Claim Saathi. Don't explain the rejection. Prevent it.

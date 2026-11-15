@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Claim Saathi — Pitch Deck</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@500;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --navy: #0a1633;
+    --navy-2: #12224a;
+    --ink: #0f172a;
+    --muted: #5b6b85;
+    --line: #e3e9f2;
+    --bg: #f3f6fb;
+    --sky: #00b9f1;
+    --sky-d: #0077b6;
+    --mint: #10b981;
+    --amber: #f59e0b;
+    --rose: #f43f5e;
+  }
+  @page { size: 1280px 720px; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #2b3445; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-family: "Plus Jakarta Sans", "Noto Sans Devanagari", Arial, sans-serif; color: var(--ink); }
+  .slide {
+    width: 1280px; height: 720px; position: relative; overflow: hidden;
+    page-break-after: always; break-after: page; margin: 0 auto;
+    padding: 64px 72px; background: #fff;
+  }
+  @media screen { .slide { margin: 24px auto; box-shadow: 0 10px 40px rgba(0,0,0,.35); border-radius: 6px; } }
+  .dark { background: var(--navy); color: #fff; }
+  .light { background: var(--bg); }
+  .glow::before, .glow::after { content: ""; position: absolute; border-radius: 50%; filter: blur(90px); opacity: .55; z-index: 0; }
+  .glow::before { width: 520px; height: 520px; background: #0b6fb0; right: -120px; top: -160px; }
+  .glow::after { width: 420px; height: 420px; background: #0e3a7a; left: -160px; bottom: -200px; }
+  .z { position: relative; z-index: 1; }
+
+  .kicker { font-size: 14px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--sky-d); }
+  .dark .kicker { color: var(--sky); }
+  h1 { font-size: 40px; line-height: 1.12; font-weight: 800; letter-spacing: -.02em; margin-top: 10px; max-width: 1000px; }
+  .lead { font-size: 18px; line-height: 1.5; color: var(--muted); margin-top: 12px; max-width: 760px; }
+  .dark .lead { color: #b8c4da; }
+  .num { font-variant-numeric: tabular-nums; }
+
+  /* phone mockup motif */
+  .phone { flex-shrink: 0; width: 236px; border-radius: 38px; background: #0b0f1a; padding: 9px; box-shadow: 0 30px 60px rgba(4,12,30,.35), 0 0 0 1px rgba(255,255,255,.06) inset; }
+  .phone img { display: block; width: 100%; height: 456px; object-fit: cover; object-position: top; border-radius: 30px; }
+  .phone.sm { width: 184px; border-radius: 30px; padding: 7px; }
+  .phone.sm img { height: 372px; border-radius: 24px; }
+
+  .card { background: #fff; border-radius: 20px; padding: 22px 24px; box-shadow: 0 1px 2px rgba(15,23,42,.05), 0 8px 24px rgba(15,23,42,.06); }
+  .dark .card { background: rgba(255,255,255,.06); box-shadow: none; border: 1px solid rgba(255,255,255,.1); }
+  .ico { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .ico svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .i-sky { background: #e0f6fe; color: var(--sky-d); }
+  .i-amber { background: #fef3c7; color: #b45309; }
+  .i-rose { background: #ffe4e8; color: #be123c; }
+  .i-mint { background: #d1fae5; color: #047857; }
+  .i-navy { background: #e6ecf7; color: var(--navy-2); }
+  .dark .i-sky { background: rgba(0,185,241,.16); color: var(--sky); }
+  .dark .i-mint { background: rgba(16,185,129,.16); color: #34d399; }
+  .dark .i-amber { background: rgba(245,158,11,.16); color: #fbbf24; }
+  .chip { display: inline-flex; align-items: center; gap: 8px; border-radius: 999px; padding: 7px 14px; font-size: 14px; font-weight: 600; }
+  .foot { position: absolute; left: 72px; right: 72px; bottom: 26px; display: flex; justify-content: space-between; font-size: 12px; color: #8a97ad; z-index: 1; }
+  .dark .foot { color: #6f7f9f; }
+</style>
+</head>
+<body>
+
+<!-- 1. TITLE -->
+<section class="slide dark glow">
+  <div class="z" style="display:flex; height:100%; gap:40px; align-items:center;">
+    <div style="flex:1;">
+      <span class="chip" style="background:rgba(0,185,241,.14); color:#7dd8f8; border:1px solid rgba(0,185,241,.3);">Paytm Build for India · AI Hackathon · Track 2</span>
+      <p style="margin-top:30px; font-family:'Noto Sans Devanagari'; font-size:22px; font-weight:700; color:#7dd8f8;">क्लेम साथी</p>
+      <h1 style="font-size:76px; margin-top:2px; line-height:1;">Claim Saathi</h1>
+      <p style="font-size:30px; font-weight:700; margin-top:18px; line-height:1.25; max-width:560px;">Fix your health-insurance claim <span style="color:var(--sky);">before it fails.</span></p>
+      <p class="lead" style="max-width:540px; font-size:19px;">Know what insurance will pay, what will be cut, and how to avoid it — in four steps on a phone, in Hindi or English.</p>
+      <div style="display:flex; gap:12px; margin-top:34px; flex-wrap:wrap;">
+        <span class="chip" style="background:#fff; color:var(--navy);">● Live: claim-saathi-rho.vercel.app</span>
+        <span class="chip" style="background:rgba(255,255,255,.08); color:#cfe0f7; border:1px solid rgba(255,255,255,.15);">▶ 1-min demo: /?demo=tour</span>
+      </div>
+      <p style="margin-top:22px; font-size:14px; color:#7f90b0;">AI-Powered Financial Journeys — Insurance</p>
+    </div>
+    <div style="position:relative; width:470px; height:560px;">
+      <div class="phone" style="position:absolute; left:0; top:40px; transform:rotate(-6deg);"><img src="assets/knee-hi.png" alt="" /></div>
+      <div class="phone" style="position:absolute; right:0; top:0; transform:rotate(4deg);"><img src="assets/result.png" alt="" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. PROBLEM -->
+<section class="slide light">
+  <p class="kicker">Problem statement</p>
+  <h1>Families pay premiums for years — then lose money to rules they never saw</h1>
+  <div style="display:flex; gap:28px; margin-top:30px;">
+    <div class="card" style="flex:1.15;">
+      <div style="display:flex; justify-content:space-between; align-items:baseline;">
+        <p style="font-weight:700; font-size:17px;">Ramesh · dengue · 4 days in hospital</p>
+        <p style="font-size:14px; color:var(--muted);">Bill <b class="num" style="color:var(--ink);">₹74,900</b></p>
+      </div>
+      <div style="display:flex; height:46px; border-radius:12px; overflow:hidden; margin-top:18px; font-weight:700; font-size:15px; color:#fff;">
+        <div style="width:70.1%; background:var(--mint); display:flex; align-items:center; padding-left:14px;" class="num">Paid ₹52,500</div>
+        <div style="width:23%; background:var(--amber); display:flex; align-items:center; justify-content:center;" class="num">₹17,200</div>
+        <div style="width:6.9%; background:var(--rose);"></div>
+      </div>
+      <div style="display:flex; gap:18px; margin-top:10px; font-size:13px; color:var(--muted);">
+        <span><b style="color:var(--mint);">■</b> Insurer pays</span><span><b style="color:var(--amber);">■</b> Avoidable cut</span><span><b style="color:var(--rose);">■</b> Non-medical items</span>
+      </div>
+      <p style="margin-top:20px; font-size:16px; line-height:1.55; color:#334155;">
+        His room cost <b>₹5,000/day</b>; the policy allowed <b>₹3,000</b>. So the insurer also paid doctor, nursing and procedure charges at only <b>60%</b> — the <b>proportionate deduction</b>, buried in clause 3.1(a).
+        <span style="color:var(--ink); font-weight:700;"> Nobody told him at the admission desk.</span>
+      </p>
+      <div style="margin-top:16px; display:flex; gap:12px; align-items:center; background:#ecfdf5; border-radius:14px; padding:12px 16px;">
+        <div class="ico i-mint" style="width:36px; height:36px;"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>
+        <p style="font-size:14px; color:#065f46; line-height:1.45;">Claim Saathi would have shown him, before admission, that a twin-sharing room costs him <b>₹17,200 less</b>.</p>
+      </div>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:12px;">
+      <p style="font-weight:700; font-size:15px; color:var(--muted);">Why health claims get cut or rejected</p>
+      <div class="card" style="display:flex; gap:14px; align-items:center; padding:14px 18px;"><div class="ico i-amber"><svg viewBox="0 0 24 24"><path d="M3 20V9l9-5 9 5v11"/><path d="M9 20v-6h6v6"/></svg></div><p style="font-size:15px;"><b>Room above the rent limit</b> — and the hidden cut that follows</p></div>
+      <div class="card" style="display:flex; gap:14px; align-items:center; padding:14px 18px;"><div class="ico i-rose"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><p style="font-size:15px;"><b>Waiting periods</b> — 30 days, 2 years, 3 years</p></div>
+      <div class="card" style="display:flex; gap:14px; align-items:center; padding:14px 18px;"><div class="ico i-sky"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M12 9v4M12 16h.01"/></svg></div><p style="font-size:15px;"><b>Pre-existing illness</b> not declared</p></div>
+      <div class="card" style="display:flex; gap:14px; align-items:center; padding:14px 18px;"><div class="ico i-navy"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></div><p style="font-size:15px;"><b>Missing documents</b> · late intimation</p></div>
+    </div>
+  </div>
+  <div style="display:flex; gap:20px; margin-top:22px;">
+    <div style="flex:1; background:var(--navy); color:#fff; border-radius:16px; padding:14px 22px; display:flex; align-items:center; gap:16px;">
+      <p style="font-size:30px; font-weight:800; color:var(--sky); white-space:nowrap;" class="num">6 in 10</p>
+      <p style="font-size:14px; color:#c3cfe4; line-height:1.4;">policyholders who claimed waited <b style="color:#fff;">6–48 hours</b> at discharge <span style="color:#7f90b0;">(LocalCircles survey)</span></p>
+    </div>
+    <div style="flex:1; background:#fff; border-radius:16px; padding:14px 22px; display:flex; align-items:center; box-shadow:0 8px 24px rgba(15,23,42,.06);">
+      <p style="font-size:15px; color:#334155; line-height:1.45;">Every one of these was knowable <b>before</b> admission — yet today’s tools only explain a rejection <b>after</b> it happens.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- 2b. PROBLEM IN NUMBERS -->
+<section class="slide dark glow">
+  <div class="z">
+    <p class="kicker">Problem statement — by the numbers</p>
+    <h1>India’s health claims are being refused and cut at scale</h1>
+    <div style="display:grid; grid-template-columns:1.25fr 1fr 1fr; gap:18px; margin-top:34px;">
+      <div class="card" style="padding:26px;">
+        <p style="font-size:60px; font-weight:800; line-height:1; color:#fbbf24;" class="num">₹29,933 cr</p>
+        <p style="font-size:15px; color:#c3cfe4; margin-top:14px; line-height:1.5;">of health claims <b style="color:#fff;">rejected</b> (₹11,412 cr) or <b style="color:#fff;">cut under policy terms</b> (₹18,521 cr) in FY 2024-25</p>
+        <p style="font-size:12px; color:#7f90b0; margin-top:10px;">IRDAI Annual Report 2024-25, as reported</p>
+      </div>
+      <div class="card" style="padding:26px;">
+        <p style="font-size:60px; font-weight:800; line-height:1; color:var(--sky);" class="num">4 in 10</p>
+        <p style="font-size:15px; color:#c3cfe4; margin-top:14px; line-height:1.5;">claimants say their claim was <b style="color:#fff;">rejected or only partly paid</b> for invalid reasons</p>
+        <p style="font-size:12px; color:#7f90b0; margin-top:10px;">LocalCircles · 54,000+ responses, 323 districts</p>
+      </div>
+      <div class="card" style="padding:26px;">
+        <p style="font-size:60px; font-weight:800; line-height:1; color:#fb7185;" class="num">+41%</p>
+        <p style="font-size:15px; color:#c3cfe4; margin-top:14px; line-height:1.5;">jump in health-insurance complaints in FY25, to <b style="color:#fff;">1,37,361</b> — driven by rejections, delays and partial payouts</p>
+        <p style="font-size:12px; color:#7f90b0; margin-top:10px;">LocalCircles, citing IRDAI data</p>
+      </div>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:18px;">
+      <div class="card" style="display:flex; gap:20px; align-items:center; padding:20px 26px;">
+        <p style="font-size:40px; font-weight:800; color:#34d399; white-space:nowrap;" class="num">82% → 71%</p>
+        <p style="font-size:14px; color:#c3cfe4; line-height:1.45;">claims settled <b style="color:#fff;">by count</b> vs <b style="color:#fff;">by value</b> (FY24) — the gap is partial payouts people didn’t see coming</p>
+      </div>
+      <div class="card" style="display:flex; gap:20px; align-items:center; padding:20px 26px;">
+        <p style="font-size:40px; font-weight:800; color:#fff; white-space:nowrap;" class="num">~19% → 44%</p>
+        <p style="font-size:14px; color:#c3cfe4; line-height:1.45;"><b style="color:#fff;">Why now:</b> urban Indians with health insurance, 2017-18 → 2025 (NSS) — millions of first-time claimants</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. SOLUTION -->
+<section class="slide">
+  <p class="kicker">Proposed solution</p>
+  <h1>A claim co-pilot for the three moments that decide the payout</h1>
+  <div style="display:flex; gap:26px; margin-top:26px;">
+    <div style="flex:1; display:flex; gap:18px; align-items:flex-start;">
+      <div class="phone sm"><img src="assets/knee.png" alt="" /></div>
+      <div style="padding-top:6px;">
+        <div class="ico i-sky" style="font-weight:800;">1</div>
+        <p style="font-weight:800; font-size:18px; margin-top:12px;">Before admission</p>
+        <p style="font-size:14px; color:var(--muted); line-height:1.5; margin-top:6px;">Which room costs you ₹0. Will a waiting period reject this surgery — and from what date is it covered.</p>
+      </div>
+    </div>
+    <div style="flex:1; display:flex; gap:18px; align-items:flex-start;">
+      <div class="phone sm"><img src="assets/result.png" alt="" /></div>
+      <div style="padding-top:6px;">
+        <div class="ico i-mint" style="font-weight:800;">2</div>
+        <p style="font-weight:800; font-size:18px; margin-top:12px;">At discharge</p>
+        <p style="font-size:14px; color:var(--muted); line-height:1.5; margin-top:6px;">“You’ll get ₹52,500 of ₹74,900.” Every cut with its reason and policy clause — and what was avoidable.</p>
+      </div>
+    </div>
+    <div style="flex:1; display:flex; gap:18px; align-items:flex-start;">
+      <div class="phone sm"><img src="assets/pack.png" alt="" /></div>
+      <div style="padding-top:6px;">
+        <div class="ico i-amber" style="font-weight:800;">3</div>
+        <p style="font-weight:800; font-size:18px; margin-top:12px;">Claim pack</p>
+        <p style="font-size:14px; color:var(--muted); line-height:1.5; margin-top:6px;">Document checklist, cover letter, and a grievance letter if the insurer cuts more than it should.</p>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex; align-items:center; gap:10px; margin-top:24px; font-size:15px; font-weight:600;">
+    <span class="chip i-navy">📷 Photo of policy</span><span style="color:#9aa8bf;">→</span>
+    <span class="chip i-navy">🧾 Photo of bill</span><span style="color:#9aa8bf;">→</span>
+    <span class="chip i-navy">👆 3 taps</span><span style="color:#9aa8bf;">→</span>
+    <span class="chip" style="background:var(--navy); color:#fff;">✓ Clear answer · हिन्दी / English</span>
+  </div>
+</section>
+
+<!-- 4. TECH STACK -->
+<section class="slide dark glow">
+  <div class="z">
+    <p class="kicker">Technology / tech stack</p>
+    <h1>AI reads the documents. A rule engine decides every rupee.</h1>
+    <div style="display:flex; align-items:stretch; gap:14px; margin-top:34px;">
+      <div class="card" style="flex:1; padding:18px;">
+        <div class="ico i-sky"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+        <p style="font-weight:700; font-size:16px; margin-top:12px;">Phone-first web app</p>
+        <p style="font-size:13px; color:#a9b7d0; margin-top:6px; line-height:1.5;">Next.js 16 · React 19 · Tailwind 4 · Hindi / English · hosted on Vercel</p>
+      </div>
+      <p style="align-self:center; color:var(--sky); font-size:22px;">→</p>
+      <div class="card" style="flex:1; padding:18px;">
+        <div class="ico i-sky"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg></div>
+        <p style="font-weight:700; font-size:16px; margin-top:12px;">Document intake</p>
+        <p style="font-size:13px; color:#a9b7d0; margin-top:6px; line-height:1.5;">PDF text extraction (unpdf) · phone photos resized &amp; cleaned in the browser</p>
+      </div>
+      <p style="align-self:center; color:var(--sky); font-size:22px;">→</p>
+      <div class="card" style="flex:1.15; padding:18px; border-color:rgba(0,185,241,.45);">
+        <div class="ico i-sky"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.7L18.5 9l-4.7 1.8L12 15.5l-1.8-4.7L5.5 9l4.7-1.3z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div>
+        <p style="font-weight:700; font-size:16px; margin-top:12px;">AI extraction</p>
+        <p style="font-size:13px; color:#a9b7d0; margin-top:6px; line-height:1.5;">Kimi K3.1-Pro → K2.5 fallback on Azure AI Foundry · zod-validated JSON with self-repair</p>
+      </div>
+      <p style="align-self:center; color:var(--sky); font-size:22px;">→</p>
+      <div class="card" style="flex:1.15; padding:18px; border-color:rgba(16,185,129,.45);">
+        <div class="ico i-mint"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 7h14M5 7l-3 7a4 4 0 0 0 6 0zM19 7l-3 7a4 4 0 0 0 6 0z"/></svg></div>
+        <p style="font-weight:700; font-size:16px; margin-top:12px;">Rule engine</p>
+        <p style="font-size:13px; color:#a9b7d0; margin-top:6px; line-height:1.5;">Room caps · proportionate deduction (IRDAI 2020 exemptions) · non-payables · waiting periods · sub-limits · co-pay · deadlines</p>
+      </div>
+      <p style="align-self:center; color:var(--sky); font-size:22px;">→</p>
+      <div class="card" style="flex:1; padding:18px;">
+        <div class="ico i-amber"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>
+        <p style="font-weight:700; font-size:16px; margin-top:12px;">Answer</p>
+        <p style="font-size:13px; color:#a9b7d0; margin-top:6px; line-height:1.5;">Payout, every cut with its clause, fixes ranked by ₹ saved, claim pack</p>
+      </div>
+    </div>
+    <div style="display:flex; gap:18px; margin-top:26px;">
+      <div class="card" style="flex:1; display:flex; gap:16px; align-items:center;">
+        <p style="font-size:38px; font-weight:800; color:#34d399; white-space:nowrap;" class="num">17/17</p>
+        <p style="font-size:14px; color:#c3cfe4; line-height:1.45;">unit tests on the rule engine. The model never does the maths — every number is <b style="color:#fff;">deterministic and explainable</b>.</p>
+      </div>
+      <div class="card" style="flex:1.3; display:flex; gap:16px; align-items:center;">
+        <p style="font-size:34px; font-weight:800; color:var(--sky); white-space:nowrap;">Real docs</p>
+        <p style="font-size:14px; color:#c3cfe4; line-height:1.45;">Tested on New India, Bajaj and Royal Sundaram policy wordings, a ₹10.2 L Aster CMI hospital bill and a real prescription.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. USP -->
+<section class="slide light">
+  <p class="kicker">USP — unique selling proposition</p>
+  <h1>Other tools explain the rejection. Claim Saathi prevents it.</h1>
+  <div style="display:flex; gap:28px; margin-top:28px; align-items:flex-start;">
+    <div class="card" style="flex:1; padding:6px 0;">
+      <table style="width:100%; border-collapse:collapse; font-size:15px;">
+        <thead>
+          <tr style="text-align:left; color:var(--muted); font-size:13px;">
+            <th style="padding:14px 24px; font-weight:600;"></th>
+            <th style="padding:14px 12px; font-weight:600;">Typical claim helpers</th>
+            <th style="padding:14px 24px 14px 12px; font-weight:700; color:var(--sky-d);">Claim Saathi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-top:1px solid var(--line);"><td style="padding:13px 24px; font-weight:700;">When it helps</td><td style="padding:13px 12px; color:var(--muted);">After the claim is cut</td><td style="padding:13px 24px 13px 12px; font-weight:600;">Before admission &amp; before filing</td></tr>
+          <tr style="border-top:1px solid var(--line);"><td style="padding:13px 24px; font-weight:700;">Payout numbers</td><td style="padding:13px 12px; color:var(--muted);">LLM estimate</td><td style="padding:13px 24px 13px 12px; font-weight:600;">Rule engine, clause cited for every ₹</td></tr>
+          <tr style="border-top:1px solid var(--line);"><td style="padding:13px 24px; font-weight:700;">Room choice</td><td style="padding:13px 12px; color:var(--muted);">—</td><td style="padding:13px 24px 13px 12px; font-weight:600;">Which room costs you ₹0</td></tr>
+          <tr style="border-top:1px solid var(--line);"><td style="padding:13px 24px; font-weight:700;">Incomplete papers</td><td style="padding:13px 12px; color:var(--muted);">Guesses or fails</td><td style="padding:13px 24px 13px 12px; font-weight:600;">Asks only for what’s missing</td></tr>
+          <tr style="border-top:1px solid var(--line);"><td style="padding:13px 24px; font-weight:700;">Effort</td><td style="padding:13px 12px; color:var(--muted);">Long forms or chat</td><td style="padding:13px 24px 13px 12px; font-weight:600;">4 steps on a phone · हिन्दी</td></tr>
+          <tr style="border-top:1px solid var(--line);"><td style="padding:13px 24px; font-weight:700;">Output</td><td style="padding:13px 12px; color:var(--muted);">An explanation</td><td style="padding:13px 24px 13px 12px; font-weight:600;">Fixes + ready claim &amp; grievance letters</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="width:240px; display:flex; flex-direction:column; align-items:center; gap:12px;">
+      <div class="phone sm"><img src="assets/deductions.png" alt="" /></div>
+      <p style="font-size:13px; color:var(--muted); text-align:center;">Every cut, its reason and its clause</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6. IMPACT -->
+<section class="slide">
+  <p class="kicker">Impact &amp; benefits</p>
+  <h1>Money kept in families’ pockets — and claims that arrive right first time</h1>
+  <div style="display:flex; gap:28px; margin-top:30px;">
+    <div style="width:360px; display:flex; flex-direction:column; gap:16px;">
+      <div style="background:var(--navy); color:#fff; border-radius:22px; padding:24px 26px;">
+        <p style="font-size:56px; font-weight:800; color:#fbbf24; line-height:1;" class="num">₹17,200</p>
+        <p style="font-size:15px; color:#c3cfe4; margin-top:10px; line-height:1.45;">avoidable loss flagged in one dengue claim — <b style="color:#fff;">23% of the bill</b> — by choosing the right room</p>
+      </div>
+      <div style="background:var(--navy); color:#fff; border-radius:22px; padding:24px 26px;">
+        <p style="font-size:56px; font-weight:800; color:#34d399; line-height:1;" class="num">₹2 L+</p>
+        <p style="font-size:15px; color:#c3cfe4; margin-top:10px; line-height:1.45;">knee-surgery rejection avoided by scheduling after the waiting period ends</p>
+      </div>
+      <p style="font-size:12px; color:#8a97ad;">Figures from the app’s demo cases, computed by the rule engine.</p>
+    </div>
+    <div style="flex:1; display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+      <div class="card" style="display:flex; gap:14px;"><div class="ico i-mint"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17.5" cy="9" r="2.5"/><path d="M16 14.5a5 5 0 0 1 5.5 5"/></svg></div><div><p style="font-weight:800; font-size:17px;">Patients &amp; families</p><p style="font-size:14px; color:var(--muted); line-height:1.5; margin-top:6px;">Fewer surprise cuts, no missed deadlines, letters ready to send — in their own language.</p></div></div>
+      <div class="card" style="display:flex; gap:14px;"><div class="ico i-sky"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div><div><p style="font-weight:800; font-size:17px;">Insurers &amp; TPAs</p><p style="font-size:14px; color:var(--muted); line-height:1.5; margin-top:6px;">Claims arrive complete — fewer query letters, less back-and-forth, fewer grievances.</p></div></div>
+      <div class="card" style="display:flex; gap:14px;"><div class="ico i-amber"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M10 21v-5h4v5M12 8v4M10 10h4"/></svg></div><div><p style="font-weight:800; font-size:17px;">Hospitals</p><p style="font-size:14px; color:var(--muted); line-height:1.5; margin-top:6px;">Faster discharge, fewer billing disputes at the insurance desk.</p></div></div>
+      <div class="card" style="display:flex; gap:14px;"><div class="ico i-navy"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-3-6.2"/><path d="M20 4v5h-5"/></svg></div><div><p style="font-weight:800; font-size:17px;">Paytm</p><p style="font-size:14px; color:var(--muted); line-height:1.5; margin-top:6px;">Trust at the moment of need — and a reason to come back every time someone is hospitalised.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. BUSINESS MODEL -->
+<section class="slide dark glow">
+  <div class="z">
+    <p class="kicker">Business model</p>
+    <h1>Free for families. Paid for by the businesses that save.</h1>
+    <div style="display:flex; gap:20px; margin-top:48px;">
+      <div class="card" style="flex:1;">
+        <div class="ico i-sky"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div>
+        <p style="font-size:13px; font-weight:700; color:var(--sky); margin-top:14px; letter-spacing:.08em;">B2B · API</p>
+        <p style="font-weight:800; font-size:20px; margin-top:4px;">Insurers &amp; TPAs</p>
+        <p style="font-size:14px; color:#b8c4da; line-height:1.5; margin-top:8px;">Per-claim pre-check fee. Complete, first-time-right claims cut processing cost and grievance volume.</p>
+      </div>
+      <div class="card" style="flex:1;">
+        <div class="ico i-amber"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 15h3"/></svg></div>
+        <p style="font-size:13px; font-weight:700; color:#fbbf24; margin-top:14px; letter-spacing:.08em;">SAAS</p>
+        <p style="font-weight:800; font-size:20px; margin-top:4px;">Hospital insurance desks</p>
+        <p style="font-size:14px; color:#b8c4da; line-height:1.5; margin-top:8px;">Subscription for TPA / billing desks: room advice at admission, document check at discharge.</p>
+      </div>
+      <div class="card" style="flex:1;">
+        <div class="ico i-mint"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div>
+        <p style="font-size:13px; font-weight:700; color:#34d399; margin-top:14px; letter-spacing:.08em;">DISTRIBUTION</p>
+        <p style="font-weight:800; font-size:20px; margin-top:4px;">Better-fit policies in Paytm</p>
+        <p style="font-size:14px; color:#b8c4da; line-height:1.5; margin-top:8px;">At renewal: “your policy has a 1% room cap — here’s a plan without one.” Commission on honest upgrades.</p>
+      </div>
+    </div>
+    <div style="display:flex; gap:12px; align-items:center; margin-top:44px; flex-wrap:wrap;">
+      <span style="font-size:14px; font-weight:700; color:#7f90b0; margin-right:4px;">GO-TO-MARKET</span>
+      <span class="chip" style="background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14);">① Paytm mini-app entry</span>
+      <span style="color:var(--sky);">→</span>
+      <span class="chip" style="background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14);">② Pilot with one insurer / TPA</span>
+      <span style="color:var(--sky);">→</span>
+      <span class="chip" style="background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14);">③ Measure query-letter rate</span>
+      <span style="color:var(--sky);">→</span>
+      <span class="chip" style="background:var(--sky); color:var(--navy);">④ Scale across hospitals</span>
+    </div>
+    <p style="margin-top:64px; font-size:28px; font-weight:800;">Claim Saathi — <span style="color:var(--sky);">don’t explain the rejection. Prevent it.</span></p>
+    <p style="margin-top:6px; font-size:15px; color:#8fa0c0;">claim-saathi-rho.vercel.app · ▶ /?demo=tour</p>
+  </div>
+</section>
+
+</body>
+</html>
